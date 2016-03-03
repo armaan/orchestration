@@ -669,6 +669,7 @@ resources:
       user_data_format: RAW
       networks:
         - port: { get_resource: alice_management_port }
+        - port: { get_resource: alice_data_port }
 
   alice_management_port:
     type: OS::Neutron::Port
